@@ -8,6 +8,15 @@ A reusable standard-library probability module with binomial mass, conditional p
 
 ![Implementation mechanism: Made and attempted shot counts → Validate count boundaries → Compute success probability → Multiply by shot point value → Compare expected points or binomial scenarios](assets/mechanism.svg)
 
+
+
+## Reproduce and inspect
+
+The executable reproduction profile now records exact commands, input/source hashes, dependency versions, logs and pass/fail status. Its scope distinguishes behavior checks from full-data benchmarks.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Try a small example
 
 A small offline fixture exercises the public implementation. It demonstrates the behavior shown below; it does not replace the historical dataset, benchmark or production validation.
