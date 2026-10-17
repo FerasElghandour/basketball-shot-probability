@@ -1,18 +1,33 @@
 # Basketball Shot Probability Analysis
 
-**Feras Elghandour** · Technical case study
-
 Estimate shot-making and conditional probabilities, then show precisely which independence assumptions are needed for a binomial projection.
 
 ## Implementation
 
 A reusable standard-library probability module with binomial mass, conditional probability, and expected-points comparisons. The original aggregate analysis is included as a machine-readable result record.
 
-```mermaid
-flowchart LR
-    A[Observations] --> B[Validated counts or measurements]
-    B --> C[Statistical calculations]
-    C --> D[Interpretable JSON results]
+![Implementation mechanism: Made and attempted shot counts → Validate count boundaries → Compute success probability → Multiply by shot point value → Compare expected points or binomial scenarios](assets/mechanism.svg)
+
+## Try a small example
+
+A small offline fixture exercises the public implementation. It demonstrates the behavior shown below; it does not replace the historical dataset, benchmark or production validation.
+
+After the local setup below, run from the repository root:
+
+```sh
+python examples/quickstart.py
+```
+
+The [example source](examples/quickstart.py), [captured output](examples/expected-output.txt) and [execution record](examples/environment.json) keep this demonstration inspectable. Floating-point values may vary with library versions.
+
+Observed output from this run:
+
+```text
+{
+  "three_point_make_probability": 0.41857506361323155,
+  "two_point_expected_points": 1.154320987654321,
+  "exactly_two_of_four": 0.375
+}
 ```
 
 ## Results

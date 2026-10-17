@@ -1,0 +1,5 @@
+{
+  "three_point_make_probability": 0.41857506361323155,
+  "two_point_expected_points": 1.154320987654321,
+  "exactly_two_of_four": 0.375
+}
