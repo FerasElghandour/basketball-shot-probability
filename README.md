@@ -59,3 +59,7 @@ python -m unittest discover -s tests -v
 Shots may be dependent and differ in difficulty, player mix, and game context. The expected-points comparison is descriptive and does not prove that choosing a three-pointer improves a team’s outcome.
 
 Raw observations and classroom slide materials are not included. For new analyses, provide your own authorized counts or CSV. No client deployment or commercial result is claimed.
+
+## Reuse
+
+The original contributions listed in [LICENSING.md](LICENSING.md) are available under [MIT](LICENSE). This scoped grant preserves upstream notices and separate dataset, simulator, notebook and checkpoint terms.
